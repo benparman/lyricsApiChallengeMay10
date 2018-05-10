@@ -6,24 +6,24 @@ You should make requests to this API: https://lyricsovh.docs.apiary.io/# .
 Also make any necessary adjustments to make this app accessible. -->
 
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Country Facts</title>
+    <title>Song Search.  Find the lyrics to your favorite songs.</title>
     <script
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <h1>Song Lyrics</h1>
-    <form action="#" class="js-search-form">
+  <body role="main">
+      <h1>Song Search.  Find the lyrics to your favorite songs.</h1>
+    <form class="js-search-form">
         <span>Artist:</span>
-        <input type="text" class="js-query-artist" placeholder="Queen">
+          <input type="text" aria-label="artist input box" class="js-query-artist" placeholder="Queen">
         <span>Song title:</span>
-        <input type="text" class="js-query-title" placeholder="Under Pressure">
+        <input type="text" aria-label="song input box"class="js-query-title" placeholder="Under Pressure">
         <button type="submit">Search</button>
     </form>
     <div class="js-search-results">
